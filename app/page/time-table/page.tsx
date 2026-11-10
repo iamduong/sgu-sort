@@ -570,6 +570,7 @@ const TimeTablePage = () => {
                   activeSubject.groups.map((gp, idx) => (
                     <div
                       key={idx}
+                      onClick={() => handleChoosePeriod(gp)}
                       className={`grid grid-cols-45 ${idx < activeSubject.groups.length - 1 && "border-b border-gray-300"}`}
                     >
                       <div className="col-span-2 px-3 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-500 border-r border-gray-300">
